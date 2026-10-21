@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+meta***REMOVED***
+  labels:
+    app: python-app
+  name: python-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-app
+  strategy: {}
+  template:
+    meta***REMOVED***
+      labels:
+        app: python-app
+    spec:
+      containers:
+      - image: johnandmachinelearning/library:pythonapp-v1
+        name: library
+        ports:
+        - containerPort: 5000
+      imagePullSecrets:
+      - name: regcred
+ 

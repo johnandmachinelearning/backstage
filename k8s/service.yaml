@@ -1,0 +1,17 @@
+***REMOVED***
+kind: Service
+meta***REMOVED***
+  creationTimestamp: "2026-10-21T03:19:42Z"
+  labels:
+    app: python-app
+  name: python-app
+  namespace: default
+spec:
+  ports:
+  - port: 5000
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: python-app
+  sessionAffinity: None
+  type: ClusterIP
