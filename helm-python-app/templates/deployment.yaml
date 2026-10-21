@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-meta***REMOVED***
+metadata:
   name: {{ include "python-app.fullname" . }}
   labels:
     {{- include "python-app.labels" . | nindent 4 }}
@@ -12,7 +12,7 @@ spec:
     matchLabels:
       {{- include "python-app.selectorLabels" . | nindent 6 }}
   template:
-    meta***REMOVED***
+    metadata:
       {{- with .Values.podAnnotations }}
       annotations:
         {{- toYaml . | nindent 8 }}

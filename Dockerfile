@@ -1,6 +1,6 @@
 FROM python:3.16.0a1-alpine3.23
 
-RUN mkdir \/app
+RUN mkdir /app
 
 WORKDIR /app
 

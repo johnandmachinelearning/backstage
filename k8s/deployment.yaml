@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-meta***REMOVED***
+metadata:
   labels:
     app: python-app
   name: python-app
@@ -11,7 +11,7 @@ spec:
       app: python-app
   strategy: {}
   template:
-    meta***REMOVED***
+    metadata:
       labels:
         app: python-app
     spec:
