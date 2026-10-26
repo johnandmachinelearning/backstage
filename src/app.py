@@ -15,8 +15,10 @@ def details():
 @app.route('/api/v1/healthz')
 def healthz():
     return jsonify({
-        'message': 'Service is healthy!'
+        'message': 'Testing this cicd pipeline'
     })
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
+
+# Use self hosted runners

@@ -1,7 +1,6 @@
-***REMOVED***
+apiVersion: v1
 kind: Service
-meta***REMOVED***
-  creationTimestamp: "2026-10-21T03:19:42Z"
+metadata:
   labels:
     app: python-app
   name: python-app

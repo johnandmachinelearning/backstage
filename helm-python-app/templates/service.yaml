@@ -1,6 +1,6 @@
-***REMOVED***
+apiVersion: v1
 kind: Service
-meta***REMOVED***
+metadata:
   name: {{ include "python-app.fullname" . }}
   labels:
     {{- include "python-app.labels" . | nindent 4 }}
